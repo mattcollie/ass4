@@ -1,0 +1,263 @@
+/*
+
+	Grid form desgined by Jeffrey Kranenburg
+	This form accomodates grid layouts for 2, 3 and 4 column content
+	
+	When repsonding to tablet sizing, 4 col layout becomes 3 cols
+	When repsonding to tablet sizing, 3 col layout becomes 2 cols
+
+	Grid is displayed from left to rigth and needs to be encapsulated inside a div with a class called row
+	Grids have a cols span of 12, this means that each class="row" needs to contain a total of grid class to match 12
+
+	Grid classes are named with the following conventions:
+	grid-amountOfCols-sizeOfCols
+	
+	##### Examples:
+	So if you have a grid-2-7 then you need to match it with a grid-2-5
+	If you have a grid-3-4 then you need to match it with a grid-3-3 and then a grid grid-3-5 etc.
+		
+*/
+
+/* REMEBER THIS:
+1) The grid lives inside the sections 
+2) So first we need to setup the main selectors 
+3) We are using media rules for the size and layout, not the looks 
+*/
+
+.row {
+	/* Every row has a 4% gap from the previous row */
+	margin-top:4%; 
+}
+
+.row:first-child
+{
+	/* The First row sits flush at the top, unless this is changed */
+	margin-top:0; 
+}
+
+.column {
+	/* Margin needs to be deducted from the width */
+	/* This is the gap between each column */
+	margin-left:4%; 
+}
+
+.column:first-child
+{
+	/* The first column sits flush to left side */
+	/* Some media rules below overwrite this */
+	margin-left:0;
+}
+
+.grid-4-1, .grid-4-2, .grid-4-3, .grid-4-4, .grid-4-5, .grid-4-6, .grid-4-7, .grid-4-8, .grid-4-9, .grid-4-10, .grid-4-11,
+.grid-3-1, .grid-3-2, .grid-3-3, .grid-3-4, .grid-3-5, .grid-3-6, .grid-3-7, .grid-3-8, .grid-3-9, .grid-3-10, .grid-3-11,
+.grid-2-1, .grid-2-2, .grid-2-3, .grid-2-4, .grid-2-5, .grid-2-6, .grid-2-7, .grid-2-8, .grid-2-9, .grid-2-10, .grid-2-11,
+.grid-1-1
+{
+	display:block;
+	background-color:#09c;
+	float:left;
+	
+	padding: 1%; /* Padding needs to be deducted from the width */
+	
+	height:auto;
+	max-height:auto;
+	overflow:none;
+}
+
+/* Smart Phones - up to iPhone 6 Plus */
+/* All grid sizes are set the same, easiest to read this way */
+@media screen and (min-width: 0) and (max-width: 414px)
+{	
+	.grid-4-1, .grid-4-2, .grid-4-3, .grid-4-4, .grid-4-5, .grid-4-6, .grid-4-7, .grid-4-8, .grid-4-9, .grid-4-10, .grid-4-11,
+	.grid-3-1, .grid-3-2, .grid-3-3, .grid-3-4, .grid-3-5, .grid-3-6, .grid-3-7, .grid-3-8, .grid-3-9, .grid-3-10, .grid-3-11,
+	.grid-2-1, .grid-2-2, .grid-2-3, .grid-2-4, .grid-2-5, .grid-2-6, .grid-2-7, .grid-2-8, .grid-2-9, .grid-2-10, .grid-2-11,
+	.grid-1-1
+	{
+		margin-left:1%;
+		width: calc(97.0% - 10px);
+		margin-top:5px;
+		margin-bottom:5px;
+	}	
+	
+	.column:first-child {
+		margin-left:1%;
+	}
+}
+
+/* Tablet Sized - Matched from iPhone6 Plus to iPad */
+/* Grid sizes shrink to next colum down for (4 becomes 3 and 3 becomes 2) 2 column layout stays the same */
+@media screen and (min-width: 415px) and (max-width: 1024px)
+{
+
+	.grid-4-1, .grid-4-2, .grid-4-3, .grid-4-4, .grid-4-5, .grid-4-6, .grid-4-7, .grid-4-8, .grid-4-9, .grid-4-10, .grid-4-11,
+	.grid-3-1, .grid-3-2, .grid-3-3, .grid-3-4, .grid-3-5, .grid-3-6, .grid-3-7, .grid-3-8, .grid-3-9, .grid-3-10, .grid-3-11,
+	.grid-2-1, .grid-2-2, .grid-2-3, .grid-2-4, .grid-2-5, .grid-2-6, .grid-2-7, .grid-2-8, .grid-2-9, .grid-2-10, .grid-2-11,
+	.grid-1-1
+	{
+		margin-left:1%;
+		width: calc(47.5% - 10px);
+		margin-top:5px;
+		margin-bottom:5px;
+	}	
+	
+	.column:first-child {
+		margin-left:1%;
+	}
+	
+}
+
+/* Anything bigger than a tablet */ 
+@media screen and (min-width: 1025px) 
+{
+	.grid-4-1, .grid-4-2, .grid-4-3, .grid-4-4, .grid-4-5, .grid-4-6, .grid-4-7, .grid-4-8, .grid-4-9, .grid-4-10, .grid-4-11,
+	.grid-3-1, .grid-3-2, .grid-3-3, .grid-3-4, .grid-3-5, .grid-3-6, .grid-3-7, .grid-3-8, .grid-3-9, .grid-3-10, .grid-3-11,
+	.grid-2-1, .grid-2-2, .grid-2-3, .grid-2-4, .grid-2-5, .grid-2-6, .grid-2-7, .grid-2-8, .grid-2-9, .grid-2-10, .grid-2-11,
+	.grid-1-1
+	{
+		max-height:90%;
+		overflow:auto;
+	}
+	
+	/* grid-1-1 */
+	.grid-1-1 {
+		width: 98%; /* 98% to accomodate 1% padding on left and right side */
+	}
+	
+	/*grid-2 */
+	.grid-2-11 {
+		width: 84.26%;
+	}
+	
+	.grid-2-10 {
+		width: 76.6%;
+	}
+	
+	.grid-2-9 {
+		width: 68.94%;
+	}
+	
+	.grid-2-8 {
+		width: 61.28%;
+	}
+	
+	.grid-2-7 {
+		width: 53.62%;
+	}
+	
+	.grid-2-6 {
+		width: 46%;
+	}
+	
+	.grid-2-5 {
+		width: 38.35%;
+	}
+	
+	.grid-2-4 {
+		width: 30.64%;
+		/*width: 28.66%; 3 columns */
+	}
+	
+	.grid-2-3 {
+		width: 22.98%;
+	}
+	
+	.grid-2-2 {
+		width: 15.32%;
+	}
+	
+	.grid-2-1 {
+		width: 7.66%;
+	}
+	
+	/*grid-3 */
+	.grid-3-11 {
+		width: 78.83%;
+	}
+	
+	.grid-3-10 {
+		width: 71.67%;
+	}
+	
+	.grid-3-9 {
+		width: 64.50%;
+	}
+	
+	.grid-3-8 {
+		width: 57.33%;
+	}
+	
+	.grid-3-7 {
+		width: 50.17%;
+	}
+	
+	.grid-3-6 {
+		width: 43%;
+	}
+	
+	.grid-3-5 {
+		width: 35.83%;
+	}
+	
+	.grid-3-4 {
+		/*width: 30.64%;*/
+		width: 28.66%;  
+	}
+	
+	.grid-3-3 {
+		width: 21.50%;
+	}
+	
+	.grid-3-2 {
+		width: 14.33%;
+	}
+	
+	.grid-3-1 {
+		width: 7.17%;
+	}
+	
+	/*grid-4 */
+	.grid-4-11 {
+		width: 73.33%;
+	}
+	
+	.grid-4-10 {
+		width: 66.67%;
+	}
+	
+	.grid-4-9 {
+		width: 60.00%;
+	}
+	
+	.grid-4-8 {
+		width: 53.33%;
+	}
+	
+	.grid-4-7 {
+		width: 46.67%;
+	}
+	
+	.grid-4-6 {
+		width: 40%;
+	}
+	
+	.grid-4-5 {
+		width: 33.33%;
+	}
+	
+	.grid-4-4 {
+		/*width: 30.64%;*/
+		width: 26.67%;  
+	}
+	
+	.grid-4-3 {
+		width: 20%;
+	}
+	
+	.grid-4-2 {
+		width: 13.33%;
+	}
+	
+	.grid-4-1 {
+		width: 6.67%;
+	}
+}
