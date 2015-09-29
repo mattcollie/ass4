@@ -1,2 +1,0 @@
-git log - view the log of commits
-
