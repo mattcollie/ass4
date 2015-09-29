@@ -6,14 +6,15 @@ git log -p
 git status
 git add . -A
 git commit -m "message"
+git reset [commit number]
 
 git branch //shows list of branches
 git branch [name] // adds new branch
 git checkout [name] //switches to different branch
 
 git config --global --list
-git config --global user.name = ""
-git config --global user.email = ""
+git config --global user.name ""
+git config --global user.email ""
 
 git remote -v
 git remote add [ref] https://name@bitbucket.org/name/reponame.git
