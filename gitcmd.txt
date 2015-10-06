@@ -18,6 +18,7 @@ git config --global user.email ""
 
 git remote -v
 git remote add [ref] https://name@bitbucket.org/name/reponame.git
+git remote add [ref] git@bitbucket.org:asse4/m_ass4.git
 git remote rm [ref]
 
 git push [ref] [local branch] 
@@ -25,3 +26,6 @@ git push ass4 master -- push to personal repo
 
 git pull [ref] [repo branch]
 git pull m_ass4 master -- pull from master assesment to local
+
+run ssh file to create ssh key [needs to be done for every pc used] 
+add ssh key to bitbucket - manage account - ssh keys and name [name, pc] paste key.
