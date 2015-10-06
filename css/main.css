@@ -24,10 +24,11 @@ nav {
 h1 {
 	
 	font-family: arial;
-	font-size: 50px;
 	color:#556AA9;	
-	margin-left:10px;
 	height: 200px;
+    margin: 0px;
+	font-size: 200%;
+	text-align: center;
 	
 }
 
@@ -38,6 +39,8 @@ h2 {
 	color:#ddd;
 	
 	margin-left:10px;
+	font-size: 200%;
+	text-align: center;
 }
 
 img {
@@ -165,12 +168,6 @@ li {
 		
 	}
 	
-	h1, h2 {
-		
-		font-size: 200%;
-		text-align: center;
-	}
-	
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px)
@@ -180,12 +177,6 @@ li {
 		font-size: 100%;
 		
 	}
-	
-	h1, h2 {
-		
-		font-size: 200%;
-		text-align: center;
-	}	
 }
 
 /*****  BODY SECTION *****/

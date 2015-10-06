@@ -1,4 +1,4 @@
-function themeSet(){
+function themeset() {
 	var value = window.localStorage.getItem('theme');
 	var sel = document.getElementById("themechanger");
 	for(var i = 0, j = sel.options.length; i < j; ++i) {
@@ -13,26 +13,10 @@ function themeSet(){
 
 function themechanger(e){
 	
-	window.localStorage.setItem('theme', e.value);
-	
-	switch(e.value){
-	case'dark':
-		loadjscssfile("css/theme_dark.css", "css");
-		break;
-	case'red':
-		loadjscssfile("css/theme_red.css", "css");
-		break;
-	case'green':
-		loadjscssfile("css/theme_green.css", "css");
-		break;
-	case'blue':
-		loadjscssfile("css/theme_blue.css", "css");
-		break;
-	case'purple':
-		loadjscssfile("css/theme_purple.css", "css");
-		break;
-	}
-	
+    window.localStorage.setItem('theme', e.value);
+
+    loadjscssfile("css/theme_"+e.value+".css", "css");
+		
 	var sel = document.getElementById("themechanger");
 	for(var i = 0, j = sel.options.length; i < j; ++i) {
         if(sel.options[i].innerHTML.toLowerCase() == e.value.toLowerCase()) {

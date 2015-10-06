@@ -1,43 +1,54 @@
 ﻿<!doctype html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="css/gridlayout.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		
-		<title>TEMPLATE</title>
-	</head>
-	<body>
-	
-		<div class="topbar">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/gridlayout.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
 
-			<h1>TEMPLATE</h1>
-		</div>
-		<nav>
-			<ul>
-				<li><a class="navlinks" href=""></a></li>
-			</ul>
-		</nav>
+    <script src="js/theme.js"></script>
 
-		<section class="center">
-			<div class="row">
-				<span class="grid-3-4 column">
-					<span class="title"></span>
-					<span class="context">
-					</span>
-				</span>
-                <span class="grid-3-4 column">
-                    <span class="title"></span>
-                    <span class="context">
-                    </span>
+
+    <title>TEMPLATE</title>
+</head>
+<body onload="themeset()">
+
+    <div class="topbarluge">
+        <div class="themebar">
+            <select id="themechanger" onchange="themechanger(this)">
+                <option value="dark" selected="selected">Dark theme</option>
+                <option value="purple">Purple theme</option>
+                <option value="green">Green theme</option>
+                <option value="red">Red theme</option>
+            </select>
+        </div>
+        <h1>TEMPLATE</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a class="navlinks" href=""></a></li>
+        </ul>
+    </nav>
+
+    <section class="center">
+        <div class="row">
+            <span class="grid-3-4 column">
+                <span class="title"></span>
+                <span class="context">
                 </span>
-                <span class="grid-3-4 column">
-                    <span class="title"></span>
-                    <span class="context">
-                    </span>
+            </span>
+            <span class="grid-3-4 column">
+                <span class="title"></span>
+                <span class="context">
                 </span>
-			</div>
-			<div style="clear:both;"></div>
-		</section>
-	</body>
-</html> 
+            </span>
+            <span class="grid-3-4 column">
+                <span class="title"></span>
+                <span class="context">
+                </span>
+            </span>
+        </div>
+        <div style="clear:both;"></div>
+    </section>
+</body>
+</html>
