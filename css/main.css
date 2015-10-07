@@ -110,6 +110,27 @@ li {
 	background-position: top;
 	background-repeat: no-repeat;	
 }
+.topbaradr
+{
+	background-image: url('../images/lugepan.jpg');
+	background-size: 100% 100%;
+	background-position: top;
+	background-repeat: no-repeat;	
+}
+.topbarkart
+{
+	background-image: url('../images/lugepan.jpg');
+	background-size: 100% 100%;
+	background-position: top;
+	background-repeat: no-repeat;	
+}
+.topbarzorb
+{
+	background-image: url('../images/lugepan.jpg');
+	background-size: 100% 100%;
+	background-position: top;
+	background-repeat: no-repeat;	
+}
 
 @media screen and (min-width: 1200px)
 {
