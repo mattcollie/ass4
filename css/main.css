@@ -121,14 +121,14 @@ li {
 }
 .topbarluge
 {
-	background-image: url('../images/lugepan.jpg');
+	background-image: url('../images/lugepan2.jpg');
 	background-size: 100% 100%;
 	background-position: top;
 	background-repeat: no-repeat;	
 }
 .topbaradr
 {
-	background-image: url('../images/lugepan.jpg');
+	background-image: url('../images/adrenpicpan.jpg');
 	background-size: 100% 100%;
 	background-position: top;
 	background-repeat: no-repeat;	
@@ -142,7 +142,21 @@ li {
 }
 .topbarzorb
 {
+	background-image: url('../images/zorb1.jpg');
+	background-size: 100% 100%;
+	background-position: top;
+	background-repeat: no-repeat;	
+}
+.topbarhome
+{
 	background-image: url('../images/lugepan.jpg');
+	background-size: 100% 100%;
+	background-position: top;
+	background-repeat: no-repeat;	
+}
+.topbarcontact
+{
+	background-image: url('../images/Mtpan.jpg');
 	background-size: 100% 100%;
 	background-position: top;
 	background-repeat: no-repeat;	
