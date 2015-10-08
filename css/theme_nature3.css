@@ -1,14 +1,14 @@
 html, body {
 	color:#222;
-	background-color:#2d882d;/*background*/
+	background-color:#514B47;/*background*/
 }
 
 ul {
-	background-color: #040;/*1st*/
+	background-color: #4D5735;/*1st*/
 }
 
 .navlinks:hover {
-	background-color: #5a5;/*3rd custom*/
+	background-color: #AEBC88;/*3rd custom*/
 }
 
 .header {
@@ -20,20 +20,20 @@ ul {
 .grid-2-1, .grid-2-2, .grid-2-3, .grid-2-4, .grid-2-5, .grid-2-6, .grid-2-7, .grid-2-8, .grid-2-9, .grid-2-10, .grid-2-11,
 .grid-1-1
 {
-	background-color:#5a5;/*3rd*/
+	background-color:#CEDCA8;/*3rd*/
 }
 
 .center {
-	background-color: #161;/*2nd*/
+	background-color: #514B47;/*2nd*/
 }
 
 .footer {
-	background-color: #040;/*1st*/
+	background-color: #4D5735;/*1st*/
 	color:#ddd;
 }
 
 .title{
-	background: #ffdb4c;
+	background: #EBEFFA;
 }
 .button {
     background-color: #ccc;

@@ -1,5 +1,5 @@
 function themeset() {
-	var value = window.localStorage.getItem('theme');
+	var value = window.localStorage.getItem('theme') || "nature1";
 	var sel = document.getElementById("themechanger");
 	for(var i = 0, j = sel.options.length; i < j; ++i) {
         if(sel.options[i].innerHTML.toLowerCase() == value.toLowerCase() + ' theme') {
@@ -14,7 +14,7 @@ function themeset() {
 function themechanger(e){
 	
     window.localStorage.setItem('theme', e.value);
-
+	
     loadjscssfile("css/theme_"+e.value+".css", "css");
 		
 	var sel = document.getElementById("themechanger");

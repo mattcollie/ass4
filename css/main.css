@@ -146,7 +146,7 @@ li {
 {
 	ul {
 		
-		height:200px;
+		height:calc(50px * 6);;
 		
 	}
 	
