@@ -5,13 +5,16 @@
     <link rel="stylesheet" type="text/css" href="css/gridlayout.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link rel="stylesheet" type="text/css" href="css/slideshow.css">
 
     <script src="js/theme.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="js/slideshow.js"></script>
+    
 
     <title>TEMPLATE</title>
 </head>
-<body onload="themeset()">
+<body onload="themeset();">
 
     <div class="topbarluge">
         <div class="themebar">
@@ -39,10 +42,19 @@
             <span class="grid-1-1 column">
                 <span class="title"></span>
                 <span class="context">
+                    <div id="slideshow">
+                       <div>
+                         <img src="images/BloKart1.jpg">
+                       </div>
+                       <div>
+                         <img src="images/BloKart2.jpg">
+                       </div>
+                    </div>
                 </span>
             </span>
         </div>
         <div style="clear:both;"></div>
     </section>
+     
 </body>
 </html>

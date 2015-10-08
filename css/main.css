@@ -1,9 +1,25 @@
+@font-face {
+	font-family: Raleway;
+    src: url(../fonts/Raleway/Raleway-Regular.ttf);
+}
+
+@font-face {
+	font-family: Nunito;
+    src: url(../fonts/Nunito/Nunito-Regular.ttf);
+}
+
+@font-face {
+	font-family: IndieFlower;
+    src: url(../fonts/Indie_Flower/IndieFlower.ttf);
+}
+
 html, body {
 	
 	font-family: arial;
 	font-size: 20px;
 	color:#222;
 	
+	font-family: Raleway;
 	
 	margin: 0px;
 	padding: 0px;
