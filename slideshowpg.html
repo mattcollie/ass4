@@ -1,0 +1,82 @@
+﻿<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/gridlayout.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link rel="stylesheet" type="text/css" href="css/slideshow.css">
+	<link rel="stylesheet" type="text/css" href="css/risaslideshow.css">
+
+    <script src="js/theme.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="js/slideshow.js"></script>
+    
+
+    <title>TEMPLATE</title>
+</head>
+<body onload="themeset();">
+
+    <div class="topbarluge">
+        <div class="themebar">
+            <select id="themechanger" onchange="themechanger(this)">
+                <option value="nature1" selected="selected">Nature1 theme</option>
+                <option value="nature2">Nature2 theme</option>
+                <option value="nature3">Nature3 theme</option>
+            </select>
+        </div>
+        <h1>TEMPLATE</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a class="navlinks" href="index.html">Home</a></li>
+            <li><a class="navlinks" href="template1.html">Adrenalin Forest</a></li>
+            <li><a class="navlinks" href="template3.html">Zorb</a></li>
+            <li><a class="navlinks" href="template4.html">Skyline</a></li>
+            <li><a class="navlinks" href="template5.html">BloKart Park</a></li>
+            <li><a class="navlinks" href="template6.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="center">
+        <div class="row">
+            <span class="grid-1-1 column">
+                <!-- image slider does somethig werid to page when you first loaded it, 
+                images are being resize by the main.css -->
+                <div id="slider">  <!-- Slider container -->
+                    <div id="mask">  <!-- Mask -->
+                        <ul>
+							 <li id="first" class="firstanimation">  <!-- ID for tooltip and class for animation -->
+							 <a href="#"> <img class="imgslider" src="images/luge4.jpg" alt="Cougar"/> </a>
+							 <div class="tooltip"> <h1>Luge</h1> </div>
+							 </li>
+
+							 <li id="second" class="secondanimation">
+							 <a href="#"> <img class="imgslider" src="images/luge4.jpg" alt="Lions"/> </a>
+							 <div class="tooltip"> <h1>Luge</h1> </div>
+							 </li>
+
+							 <li id="third" class="thirdanimation">
+							 <a href="#"> <img class="imgslider" src="images/luge4.jpg" alt="Snowalker"/> </a>
+							 <div class="tooltip"> <h1>Luge</h1> </div>
+							 </li>
+
+							 <li id="fourth" class="fourthanimation">
+							 <a href="#"> <img class="imgslider" src="images/luge4.jpg" alt="Howling"/> </a>
+							 <div class="tooltip"> <h1>Luge</h1> </div>
+							 </li>
+
+							 <li id="fifth" class="fifthanimation">
+							 <a href="#"> <img class="imgslider" src="images/luge4.jpg" alt="Sunbathing"/> </a>
+							 <div class="tooltip"> <h1>Luge</h1> </div>
+							 </li>
+                        </ul>
+                    </div>  <!-- End Mask -->
+                    <div class="progress-bar"></div>  <!-- Progress Bar -->
+                </div>  <!-- End Slider Container -->   
+            </span>
+        </div>
+        <div style="clear:both;"></div>
+    </section>     
+</body>
+</html>
