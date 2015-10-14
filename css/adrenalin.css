@@ -5,7 +5,11 @@
 	background-position: top;
 	background-repeat: no-repeat;	
 }
-
+h1
+{
+	color: #CEDCA8; 
+	font-family: Nunito;	
+}
 
 @media screen and (min-width: 1200px)
 {
