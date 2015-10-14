@@ -54,7 +54,7 @@
 .grid-1-1
 {
 	display:block;
-	background-color:#09c;
+	/*background-color:#09c;*/
 	float:left;
 	
 	padding: 1%; /* Padding needs to be deducted from the width */

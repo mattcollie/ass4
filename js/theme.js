@@ -1,11 +1,16 @@
 function themeset() {
-	var value = window.localStorage.getItem('theme') || "nature1";
-	var sel = document.getElementById("themechanger");
-	for(var i = 0, j = sel.options.length; i < j; ++i) {
-        if(sel.options[i].innerHTML.toLowerCase() == value.toLowerCase() + ' theme') {
-           sel.selectedIndex = i;
-		   themechanger({value:value});
-           break;
+    var value = window.localStorage.getItem('theme') || "nature1";
+    var sel = document.getElementById("themechanger");
+    if (sel == null) {
+        themechanger({ value: value });
+    }
+    else {
+        for (var i = 0, j = sel.options.length; i < j; ++i) {
+            if (sel.options[i].innerHTML.toLowerCase() == value.toLowerCase() + ' theme') {
+                sel.selectedIndex = i;
+                themechanger({ value: value });
+                break;
+            }
         }
     }
 	
@@ -14,7 +19,6 @@ function themeset() {
 function themechanger(e){
 	
     window.localStorage.setItem('theme', e.value);
-	
     loadjscssfile("css/theme_"+e.value+".css", "css");
 		
 	var sel = document.getElementById("themechanger");

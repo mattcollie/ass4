@@ -18,7 +18,7 @@ html, body {
 	
 	font-family: arial;
 	font-size: 20px;
-	color:#222;
+	/*color:#222;*/
 	
 	font-family: Raleway;
 	
@@ -76,7 +76,7 @@ ul {
 	
 	list-style-type: none;
 	
-	background-color: #020202;
+	/*background-color: #020202;*/
 	
 }
 
@@ -105,14 +105,14 @@ li {
 }
 
 .header {
-	background-color: #567;
+	/*background-color: #567;*/
 	margin: 0;
 	padding: 0;
 	float:left;
 }
 
 .center {
-	background-color: #313131;
+	/*background-color: #313131;*/
 	float:left;
     width: 100%;
     height: auto;
@@ -166,10 +166,6 @@ li {
 		width:100%;
 		height:auto;
 	}
-
-    #slider {
-        height: 500px;
-    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px)
@@ -194,9 +190,6 @@ li {
 		font-size: 100%;
 		
 	}
-    #slider {
-        height: 250px;
-    }	
 	
 }
 
@@ -204,7 +197,7 @@ li {
 {
 	ul#navbar {
 		
-		height:calc(50px * 6);;
+		height:calc(50px * 6);
 		
 	}
 	
@@ -222,9 +215,6 @@ li {
 		font-size: 100%;
 		
 	}
-    #slider {
-        height: 200px;
-    }	
 	
 }
 
@@ -232,7 +222,7 @@ li {
 
 .title{
 	display:block;
-	background: #ffdb4c;
+	/*background: #ffdb4c;*/
 
 	height: 80px;
 	line-height: 80px;
