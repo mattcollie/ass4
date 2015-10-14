@@ -1,0 +1,23 @@
+﻿.topbaradr
+{
+	background-image: url('../images/adrenpicpan.jpg');
+	background-size: 100% 100%;
+	background-position: top;
+	background-repeat: no-repeat;	
+}
+
+@media screen and (min-width: 1200px)
+{
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px)
+{
+
+}
+
+@media screen and (min-width: 0) and (max-width: 767px)
+{
+
+}
