@@ -12,8 +12,10 @@
 
     <link rel="stylesheet" type="text/css" href="css/gridlayout.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/theme.css">
-    <link rel="stylesheet" type="text/css" href="css/adrenalin.css">
+    <link rel="stylesheet" type="text/css" href="css/theme.css"> 
+    <link rel="stylesheet" type="text/css" href="css/risaslideshow.css">
+    <link rel="stylesheet" type="text/css" href="css/skyline.css">
+
 
     <script src="js/theme.js"></script>
 
@@ -63,15 +65,30 @@
             <span class="grid-2-6 column">
                 <span class="title">Pictures and Videos</span>
                 <span class="context">
-                    <p>
-                        <img src="images/adrenpic1.jpg" alt="flying fox">
-                    </p>
-                    <p>
-                    <img src="images/adrenpic2.jpg" alt="rope cage">
-                    </p>
-                    <p>
-                    <img src="images/adrenpic3.jpg" alt="rope swings">
-                    </p>
+                    <div id="slider">
+                        <!-- Slider container -->
+                        <div id="mask">
+                            <!-- Mask -->
+                            <ul id="slideul">
+                                <li id="first" class="firstanimation">
+                                    <!-- ID for tooltip and class for animation -->
+                                    <a href="#"> <img class="imgslider" src="images/adrenpic1.jpg" alt="Flying Fox" /> </a>
+                                    <div class="tooltip"> <h1>Flying Fox</h1> </div>
+                                </li>
+
+                                <li id="second" class="secondanimation">
+                                    <a href="#"> <img class="imgslider" src="images/adrenpic2.jpg" alt="Rope Cage" /> </a>
+                                    <div class="tooltip"> <h1>Rope Cage</h1> </div>
+                                </li>
+
+                                <li id="third" class="thirdanimation">
+                                    <a href="#"> <img class="imgslider" src="images/adrenpic3.jpg" alt="Swings" /> </a>
+                                    <div class="tooltip"> <h1>Swings</h1> </div>
+                                </li>                           
+                            </ul>
+                        </div>  <!-- End Mask -->
+                        <div class="progress-bar"></div>  <!-- Progress Bar -->
+                    </div>  <!-- End Slider Container -->
                 </span>
             </span>
         </div>

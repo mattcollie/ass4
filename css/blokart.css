@@ -1,17 +1,22 @@
-﻿@media screen and (min-width: 1200px)
-{
-
-
+﻿@media screen and (min-width: 1200px) {
+    #slider {
+        height: 200px;
+        width: 95%;
+    }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px)
-{
-
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    #slider {
+        height: 400px;
+        width: 95%;
+    }
 }
 
-@media screen and (min-width: 0) and (max-width: 767px)
-{
-
+@media screen and (min-width: 0) and (max-width: 767px) {
+    #slider {
+        height: 300px;
+        width: 95%;
+    }
 }
 
 .topbarkart
@@ -20,4 +25,12 @@
 	background-size: 100% 100%;
 	background-position: top;
 	background-repeat: no-repeat;	
+}
+.context {
+    width: 100%;
+}
+
+.grid-3-4 {
+    padding-bottom: 500em;
+    margin-bottom: -500em;
 }
