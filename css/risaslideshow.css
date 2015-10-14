@@ -20,10 +20,11 @@
    overflow: hidden;
    height: 320px;
 }
-#slider ul {
+#slider ul#slideul {
    margin: 0;
    padding: 0;
    position: relative;
+   background-color: black;
 }
 
 #slider li {
@@ -166,29 +167,6 @@
 
    /* In these keyframes, the progress-bar will disappear and then resume the cycle */
    18%, 38%, 58%, 78%, 98% { width: 100%; opacity: 0; }
-}
-
-div {
-   animation-name: move;
-   animation-duration: 1s;
-   animation-timing-function: ease-in-out;
-   animation-delay: 0.5s;
-   animation-iteration-count: 2;
-   animation-direction: alternate;
-
-   -moz-animation-name: move;
-   -moz-animation-duration: 1s;
-   -moz-animation-timing-function: ease-in-out;
-   -moz-animation-delay: 0.5s;
-   -moz-animation-iteration-count: 2;
-   -moz-animation-direction: alternate;
-
-   -webkit-animation-name: move;
-   -webkit-animation-duration: 1s;
-   -webkit-animation-timing-function: ease-in-out;
-   -webkit-animation-delay: 0.5s;
-   -webkit-animation-iteration-count: 2;
-   -webkit-animation-direction: alternate;
 }
 
 /* Animation from 0% to 100% */
