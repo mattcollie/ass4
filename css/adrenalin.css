@@ -1,17 +1,28 @@
 ﻿.topbaradr
 {
-	background-image: url('../images/adrenpicpan.jpg');
+	background-image: url('../images/adrenpicpan2.jpg');
 	background-size: 100% 100%;
 	background-position: top;
 	background-repeat: no-repeat;	
 }
 h1
 {
-	color: #CEDCA8; 
 	font-family: Nunito;	
 }
 .context {
     width: 100%;
+}
+
+.videopadding{
+     padding-left: 7px;
+     padding-right: 7px;
+}
+
+.video{
+     border-width: 5px;
+     border-color: #fff;
+     border-style: solid;  
+     margin: 40px    
 }
 
 .grid-2-6 {
@@ -24,6 +35,10 @@ h1
         height: 200px;
         width: 95%;
     }
+    .video{
+        height: 200px;
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -31,11 +46,19 @@ h1
         height: 400px;
         width: 95%;
     }
+    .video{
+        height: 400px;
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 0) and (max-width: 767px) {
     #slider {
         height: 300px;
         width: 95%;
+    }
+    .video{
+        height: 300px;
+        width: 100%;
     }
 }
