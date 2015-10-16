@@ -1,24 +1,64 @@
 ﻿.topbaradr
 {
-	background-image: url('../images/adrenpicpan.jpg');
+	background-image: url('../images/adrenpicpan2.jpg');
 	background-size: 100% 100%;
 	background-position: top;
 	background-repeat: no-repeat;	
 }
-
-
-@media screen and (min-width: 1200px)
+h1
 {
-
-
+	font-family: Nunito;	
+}
+.context {
+    width: 100%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px)
-{
-
+.videopadding{
+     padding-left: 7px;
+     padding-right: 7px;
 }
 
-@media screen and (min-width: 0) and (max-width: 767px)
-{
+.video{
+     border-width: 5px;
+     border-color: #fff;
+     border-style: solid;  
+     margin: 40px    
+}
 
+.grid-2-6 {
+    padding-bottom: 500em;
+    margin-bottom: -500em;
+}
+
+@media screen and (min-width: 1200px) {
+    #slider {
+        height: 200px;
+        width: 95%;
+    }
+    .video{
+        height: 200px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    #slider {
+        height: 400px;
+        width: 95%;
+    }
+    .video{
+        height: 400px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 767px) {
+    #slider {
+        height: 300px;
+        width: 95%;
+    }
+    .video{
+        height: 300px;
+        width: 100%;
+    }
 }

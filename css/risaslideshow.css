@@ -1,3 +1,5 @@
+/* SLIDER FROM http://www.smashingmagazine.com/2012/04/pure-css3-cycling-slideshow/ */
+
 /* SLIDER STRUCTURE */
 
 #slider {
@@ -120,7 +122,11 @@ ul#slideul {
    top: -5px;
    width: 680px;
    height: 5px;
+<<<<<<< HEAD
    background:#E3E3E3 ;
+=======
+   background: #E3E3E3;
+>>>>>>> 98facc36e84fe15c5b34d3b22e1626036c9942c3
    animation: fullexpand 25s ease-out infinite;
 }
 
