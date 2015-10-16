@@ -29,3 +29,11 @@ git pull m_ass4 master -- pull from master assesment to local
 
 run ssh file to create ssh key [needs to be done for every pc used] 
 add ssh key to bitbucket - manage account - ssh keys and name [name, pc] paste key.
+
+
+
+Remotes to remember:
+https://matt-c@bitbucket.org/matt-c/ass4.git
+git@bcs.net.nz:/gitprojects/lm_assn4.git
+https://github.com/slothpie/ass4.git
+git@bitbucket.org:asse4/m_ass4.git
