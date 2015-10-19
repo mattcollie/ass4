@@ -18,6 +18,10 @@
     src: url(../fonts/Indie_Flower/IndieFlower.ttf);
 }
 
+.form {
+    padding: 10px;
+}
+
 .topbar
 {
 	background-image: url('../images/Mtpan.jpg');
@@ -48,7 +52,7 @@
     font-size: 40px;
     text-decoration: none;
     cursor: pointer;
-    border:none;
+    border: none;
     font-family: IndieFlower;
 }
 

@@ -3,7 +3,7 @@ html, body {
 	background-color:#465223;/*background*/
 }
 
-ul {
+ul, #menu-button {
 	background-color: #806233;/*1st*/
 }
 

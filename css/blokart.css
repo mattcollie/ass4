@@ -1,25 +1,4 @@
-﻿@media screen and (min-width: 1200px) {
-    #slider {
-        height: 200px;
-        width: 95%;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-    #slider {
-        height: 400px;
-        width: 95%;
-    }
-}
-
-@media screen and (min-width: 0) and (max-width: 767px) {
-    #slider {
-        height: 300px;
-        width: 95%;
-    }
-}
-
-.topbar
+﻿.topbar
 {
 	background-image: url('../images/lugepan.jpg');
 	background-size: 100% 100%;
@@ -33,4 +12,37 @@
 .grid-3-4 {
     padding-bottom: 500em;
     margin-bottom: -500em;
+}
+
+@media screen and (min-width: 1200px) {
+    #slider {
+        height: 200px;
+        width: 95%;
+    }
+    .grid-3-4 {
+        padding-bottom: 500em;
+        margin-bottom: -500em;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    #slider {
+        height: 400px;
+        width: 95%;
+    }
+    .grid-3-4 {
+        padding-bottom: 10px;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 767px) {
+    #slider {
+        height: 300px;
+        width: 95%;
+    }
+    .grid-3-4 {
+        padding-bottom: 10px;
+        margin-bottom: 0px;
+    }
 }

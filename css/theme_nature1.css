@@ -4,7 +4,7 @@ html, body {
 }
 
 
-ul {
+ul, #menu-button {
 	background-color: #2C4468; /*1st*/
 }
 
@@ -20,7 +20,7 @@ ul {
 	background-color:#A9B768;/*3rd*/
 }
 
-.header {
+.header  {
 	background-color: #567;
 }
 
@@ -32,6 +32,7 @@ ul {
 	background-color: #415643;/*1st*/
 	color:#ddd;
 }
+
 
 .title{
 	background: #E3E3E3;
